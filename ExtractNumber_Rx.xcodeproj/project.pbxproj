@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		20032F8A28FEAD3600567278 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 20032F8928FEAD3600567278 /* SnapKit */; };
-		20032F8C28FED70800567278 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20032F8B28FED70800567278 /* RootViewModel.swift */; };
+		20032F8C28FED70800567278 /* ExtractViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20032F8B28FED70800567278 /* ExtractViewModel.swift */; };
 		20032F8F28FED75800567278 /* RadomPickService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20032F8E28FED75800567278 /* RadomPickService.swift */; };
 		20032F9228FEDF9100567278 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 20032F9128FEDF9100567278 /* RxCocoa */; };
 		20032F9428FEDF9100567278 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 20032F9328FEDF9100567278 /* RxRelay */; };
@@ -20,11 +20,13 @@
 		206BC89128DAD2260018AF04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BC89028DAD2260018AF04 /* SceneDelegate.swift */; };
 		206BC89828DAD2280018AF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206BC89728DAD2280018AF04 /* Assets.xcassets */; };
 		206BC89B28DAD2280018AF04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206BC89928DAD2280018AF04 /* LaunchScreen.storyboard */; };
-		206BC8A428DAD2540018AF04 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BC8A328DAD2540018AF04 /* RootViewController.swift */; };
+		206BC8A428DAD2540018AF04 /* ExtractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BC8A328DAD2540018AF04 /* ExtractViewController.swift */; };
+		20715B1929B33F93008EBA57 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20715B1829B33F93008EBA57 /* RootTabBarController.swift */; };
+		20715B3D29B34862008EBA57 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20715B3C29B34862008EBA57 /* TabViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		20032F8B28FED70800567278 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		20032F8B28FED70800567278 /* ExtractViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractViewModel.swift; sourceTree = "<group>"; };
 		20032F8E28FED75800567278 /* RadomPickService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadomPickService.swift; sourceTree = "<group>"; };
 		20032F982902340A00567278 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		20032F9B2902637800567278 /* PickNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickNumber.swift; sourceTree = "<group>"; };
@@ -35,7 +37,9 @@
 		206BC89728DAD2280018AF04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		206BC89A28DAD2280018AF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		206BC89C28DAD2280018AF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		206BC8A328DAD2540018AF04 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		206BC8A328DAD2540018AF04 /* ExtractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractViewController.swift; sourceTree = "<group>"; };
+		20715B1829B33F93008EBA57 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		20715B3C29B34862008EBA57 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,7 @@
 		20032F8628FEA52A00567278 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				206BC8A228DAD2390018AF04 /* Controller */,
+				206BC8A228DAD2390018AF04 /* ViewController */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -64,7 +68,7 @@
 		20032F8728FEA71700567278 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				20032F8B28FED70800567278 /* RootViewModel.swift */,
+				20032F8B28FED70800567278 /* ExtractViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -127,12 +131,14 @@
 			path = ExtractNumber_Rx;
 			sourceTree = "<group>";
 		};
-		206BC8A228DAD2390018AF04 /* Controller */ = {
+		206BC8A228DAD2390018AF04 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				206BC8A328DAD2540018AF04 /* RootViewController.swift */,
+				206BC8A328DAD2540018AF04 /* ExtractViewController.swift */,
+				20715B1829B33F93008EBA57 /* RootTabBarController.swift */,
+				20715B3C29B34862008EBA57 /* TabViewController.swift */,
 			);
-			path = Controller;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,11 +223,13 @@
 			files = (
 				20032F9C2902637800567278 /* PickNumber.swift in Sources */,
 				206BC88F28DAD2260018AF04 /* AppDelegate.swift in Sources */,
-				206BC8A428DAD2540018AF04 /* RootViewController.swift in Sources */,
+				20715B1929B33F93008EBA57 /* RootTabBarController.swift in Sources */,
+				206BC8A428DAD2540018AF04 /* ExtractViewController.swift in Sources */,
 				20032F9E29029E7000567278 /* DesiginService.swift in Sources */,
-				20032F8C28FED70800567278 /* RootViewModel.swift in Sources */,
+				20032F8C28FED70800567278 /* ExtractViewModel.swift in Sources */,
 				20032F992902340A00567278 /* Extension.swift in Sources */,
 				206BC89128DAD2260018AF04 /* SceneDelegate.swift in Sources */,
+				20715B3D29B34862008EBA57 /* TabViewController.swift in Sources */,
 				20032F8F28FED75800567278 /* RadomPickService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

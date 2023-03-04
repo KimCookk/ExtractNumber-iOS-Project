@@ -9,13 +9,13 @@ import SnapKit
 import RxSwift
 import RxCocoa
 
-class RootViewController: UIViewController {
+class ExtractViewController: UIViewController {
     
     //MARK : Properties
     let pickMaxLineNumber = 10
     
     let disposeBag = DisposeBag()
-    let rootViewModel = RootViewModel()
+    let rootViewModel = ExtractViewModel()
     
 
     //MARK : UI Component
@@ -208,6 +208,9 @@ class RootViewController: UIViewController {
         return button
     }()
     
+//    convenience init() {
+//        self.init()
+//    }
     
     //MARK : LifeCycles
     override func viewDidLoad() {
@@ -223,7 +226,7 @@ class RootViewController: UIViewController {
     }
 }
 
-extension RootViewController{
+extension ExtractViewController{
     //MARK : Methods
     func configureUI() {
         view.addSubview(uiCotainerView)
@@ -383,7 +386,7 @@ extension RootViewController{
     
 }
 
-extension RootViewController{
+extension ExtractViewController{
     func makePickView(pickNumber: PickNumber? = nil) -> UIView{
         let view = UIView()
         let label = UILabel()
