@@ -23,6 +23,7 @@
 		206BC8A428DAD2540018AF04 /* ExtractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BC8A328DAD2540018AF04 /* ExtractViewController.swift */; };
 		20715B1929B33F93008EBA57 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20715B1829B33F93008EBA57 /* RootTabBarController.swift */; };
 		20715B3D29B34862008EBA57 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20715B3C29B34862008EBA57 /* TabViewController.swift */; };
+		20DCB20D29B4C16B0098CA67 /* FlexibleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCB20C29B4C16B0098CA67 /* FlexibleStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		206BC8A328DAD2540018AF04 /* ExtractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractViewController.swift; sourceTree = "<group>"; };
 		20715B1829B33F93008EBA57 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		20715B3C29B34862008EBA57 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		20DCB20C29B4C16B0098CA67 /* FlexibleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		20032F8628FEA52A00567278 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				20DCB20B29B4C13D0098CA67 /* CommonViewComponent */,
 				206BC8A228DAD2390018AF04 /* ViewController */,
 			);
 			path = View;
@@ -139,6 +142,14 @@
 				20715B3C29B34862008EBA57 /* TabViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		20DCB20B29B4C13D0098CA67 /* CommonViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				20DCB20C29B4C16B0098CA67 /* FlexibleStackView.swift */,
+			);
+			path = CommonViewComponent;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +236,7 @@
 				206BC88F28DAD2260018AF04 /* AppDelegate.swift in Sources */,
 				20715B1929B33F93008EBA57 /* RootTabBarController.swift in Sources */,
 				206BC8A428DAD2540018AF04 /* ExtractViewController.swift in Sources */,
+				20DCB20D29B4C16B0098CA67 /* FlexibleStackView.swift in Sources */,
 				20032F9E29029E7000567278 /* DesiginService.swift in Sources */,
 				20032F8C28FED70800567278 /* ExtractViewModel.swift in Sources */,
 				20032F992902340A00567278 /* Extension.swift in Sources */,
