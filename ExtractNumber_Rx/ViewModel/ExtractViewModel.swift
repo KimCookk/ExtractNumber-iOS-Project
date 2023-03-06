@@ -8,7 +8,7 @@
 import Foundation
 import RxSwift
 
-class RootViewModel{
+class ExtractViewModel{
     // MARK: PROPERTIES
     
     let randomPickService: RandomPickService
