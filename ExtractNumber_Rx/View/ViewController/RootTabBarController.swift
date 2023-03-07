@@ -20,7 +20,7 @@ class RootTabBarController: UITabBarController {
     
     func configureViewController() {
         let firstExtractViewController = ExtractViewController()
-        let secondsExtractViewController = PreViewController()
+        let secondsExtractViewController = TempExtractViewController()
         //self.viewControllers = [firstExtractViewController]
         
         let tabViewController = TabViewController(title: "Test", backgroundColor: .red)
