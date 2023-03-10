@@ -25,6 +25,8 @@
 		20715B3D29B34862008EBA57 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20715B3C29B34862008EBA57 /* TabViewController.swift */; };
 		207471DC29B5841D008BE51C /* PreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207471DB29B5841D008BE51C /* PreViewController.swift */; };
 		207471DF29B58634008BE51C /* ViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207471DE29B58634008BE51C /* ViewProtocol.swift */; };
+		207471E229B76868008BE51C /* TempExtractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207471E129B76868008BE51C /* TempExtractViewController.swift */; };
+		207471E429B76B43008BE51C /* ExtractPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207471E329B76B43008BE51C /* ExtractPageView.swift */; };
 		20DCB20D29B4C16B0098CA67 /* FlexibleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DCB20C29B4C16B0098CA67 /* FlexibleStackView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,8 @@
 		20715B3C29B34862008EBA57 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		207471DB29B5841D008BE51C /* PreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreViewController.swift; sourceTree = "<group>"; };
 		207471DE29B58634008BE51C /* ViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProtocol.swift; sourceTree = "<group>"; };
+		207471E129B76868008BE51C /* TempExtractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempExtractViewController.swift; sourceTree = "<group>"; };
+		207471E329B76B43008BE51C /* ExtractPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtractPageView.swift; sourceTree = "<group>"; };
 		20DCB20C29B4C16B0098CA67 /* FlexibleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +146,7 @@
 		206BC8A228DAD2390018AF04 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				207471E029B7684F008BE51C /* ExtractPageView */,
 				206BC8A328DAD2540018AF04 /* ExtractViewController.swift */,
 				20715B1829B33F93008EBA57 /* RootTabBarController.swift */,
 				20715B3C29B34862008EBA57 /* TabViewController.swift */,
@@ -156,6 +161,15 @@
 				207471DE29B58634008BE51C /* ViewProtocol.swift */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		207471E029B7684F008BE51C /* ExtractPageView */ = {
+			isa = PBXGroup;
+			children = (
+				207471E129B76868008BE51C /* TempExtractViewController.swift */,
+				207471E329B76B43008BE51C /* ExtractPageView.swift */,
+			);
+			path = ExtractPageView;
 			sourceTree = "<group>";
 		};
 		20DCB20B29B4C13D0098CA67 /* CommonViewComponent */ = {
@@ -248,6 +262,7 @@
 			files = (
 				20032F9C2902637800567278 /* PickNumber.swift in Sources */,
 				206BC88F28DAD2260018AF04 /* AppDelegate.swift in Sources */,
+				207471E229B76868008BE51C /* TempExtractViewController.swift in Sources */,
 				20715B1929B33F93008EBA57 /* RootTabBarController.swift in Sources */,
 				206BC8A428DAD2540018AF04 /* ExtractViewController.swift in Sources */,
 				207471DF29B58634008BE51C /* ViewProtocol.swift in Sources */,
@@ -259,6 +274,7 @@
 				206BC89128DAD2260018AF04 /* SceneDelegate.swift in Sources */,
 				20715B3D29B34862008EBA57 /* TabViewController.swift in Sources */,
 				20032F8F28FED75800567278 /* RadomPickService.swift in Sources */,
+				207471E429B76B43008BE51C /* ExtractPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

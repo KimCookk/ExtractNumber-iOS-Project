@@ -29,6 +29,8 @@ class FlexibleStackView: UIStackView {
             let stackUnitView = FlexibleStackUnitView(ratio: ratio)
             stackUnitViews.append(stackUnitView)
         }
+        
+        configureView()
     }
 }
 
