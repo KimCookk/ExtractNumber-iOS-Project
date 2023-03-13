@@ -16,6 +16,13 @@ class ExtractPageView: UIView {
         return flexibleStackView
     }()
     
+    lazy var randomNumberView: RandomNumberView = {
+       let randomNumberView = RandomNumberView()
+        
+        return randomNumberView
+    }()
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configureView()
@@ -35,6 +42,49 @@ extension ExtractPageView: ViewAble {
             make.centerY.equalToSuperview()
             make.width.equalToSuperview()
             make.height.equalToSuperview()
+        }
+        
+        verticalMainStackView.addStackView(1, addView: randomNumberView)
+        randomNumberView.snp.makeConstraints{ (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.width.equalToSuperview()
+            make.height.equalToSuperview()
+        }
+    }
+    
+    func configureEvent() {
+        
+    }
+}
+
+class RandomNumberView: UIView {
+    
+    lazy var circleRandomNumberView: CircleNumberView = {
+        let randomNumberview = CircleNumberView(number: "1", color: UIColor.getRandom())
+        
+        return randomNumberview
+    }()
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configureView()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension RandomNumberView: ViewAble {
+    func configureDraw() {
+        self.addSubview(circleRandomNumberView)
+        
+        circleRandomNumberView.snp.makeConstraints{ make in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.width.height.equalTo(self.snp.width).multipliedBy(0.5)
+            
         }
     }
     

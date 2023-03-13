@@ -16,6 +16,7 @@
 		20032F992902340A00567278 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20032F982902340A00567278 /* Extension.swift */; };
 		20032F9C2902637800567278 /* PickNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20032F9B2902637800567278 /* PickNumber.swift */; };
 		20032F9E29029E7000567278 /* DesiginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20032F9D29029E7000567278 /* DesiginService.swift */; };
+		205E6A5029BF1269001177B0 /* CircleNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E6A4F29BF1269001177B0 /* CircleNumberView.swift */; };
 		206BC88F28DAD2260018AF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BC88E28DAD2260018AF04 /* AppDelegate.swift */; };
 		206BC89128DAD2260018AF04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BC89028DAD2260018AF04 /* SceneDelegate.swift */; };
 		206BC89828DAD2280018AF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206BC89728DAD2280018AF04 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		20032F982902340A00567278 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		20032F9B2902637800567278 /* PickNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickNumber.swift; sourceTree = "<group>"; };
 		20032F9D29029E7000567278 /* DesiginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesiginService.swift; sourceTree = "<group>"; };
+		205E6A4F29BF1269001177B0 /* CircleNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleNumberView.swift; sourceTree = "<group>"; };
 		206BC88B28DAD2260018AF04 /* ExtractNumber_Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtractNumber_Rx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206BC88E28DAD2260018AF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		206BC89028DAD2260018AF04 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		205E6A4E29BF11C0001177B0 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		206BC88228DAD2260018AF04 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +138,7 @@
 		206BC88D28DAD2260018AF04 /* ExtractNumber_Rx */ = {
 			isa = PBXGroup;
 			children = (
+				205E6A4E29BF11C0001177B0 /* Constant */,
 				20032F9A2902636600567278 /* Model */,
 				20032F97290233F500567278 /* Extension */,
 				20032F8D28FED70F00567278 /* Service */,
@@ -176,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				20DCB20C29B4C16B0098CA67 /* FlexibleStackView.swift */,
+				205E6A4F29BF1269001177B0 /* CircleNumberView.swift */,
 			);
 			path = CommonViewComponent;
 			sourceTree = "<group>";
@@ -267,6 +278,7 @@
 				206BC8A428DAD2540018AF04 /* ExtractViewController.swift in Sources */,
 				207471DF29B58634008BE51C /* ViewProtocol.swift in Sources */,
 				207471DC29B5841D008BE51C /* PreViewController.swift in Sources */,
+				205E6A5029BF1269001177B0 /* CircleNumberView.swift in Sources */,
 				20DCB20D29B4C16B0098CA67 /* FlexibleStackView.swift in Sources */,
 				20032F9E29029E7000567278 /* DesiginService.swift in Sources */,
 				20032F8C28FED70800567278 /* ExtractViewModel.swift in Sources */,
