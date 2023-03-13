@@ -32,6 +32,13 @@ class FlexibleStackView: UIStackView {
         
         configureView()
     }
+    
+    func addStackView(_ index: Int, addView: UIView) {
+        guard stackUnitViews.count >= index + 1 else {
+            return
+        }
+        stackUnitViews[index].addSubview(addView)
+    }
 }
 
 extension FlexibleStackView: ViewAble {
@@ -65,7 +72,7 @@ class FlexibleStackUnitView: UIView {
         let randomRed:CGFloat = CGFloat(drand48())
         let randomGreen:CGFloat = CGFloat(drand48())
         let randomBlue:CGFloat = CGFloat(drand48())
-         
+
         self.backgroundColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
     }
 }
