@@ -10,16 +10,28 @@ import UIKit
 
 class ExtractPageView: UIView {
     
-    lazy var verticalMainStackView: FlexibleStackView = {
-        let flexibleStackView = FlexibleStackView(ratios: [0.1, 0.5, 0.3, 0.1], axis: .vertical)
+    private var verticalMainStackView: FlexibleStackView = {
+        let flexibleStackView = FlexibleStackView(ratios: [0.1, 0.45, 0.3, 0.15], axis: .vertical)
         
         return flexibleStackView
     }()
     
-    lazy var randomNumberView: RandomNumberView = {
+    private var randomNumberView: RandomNumberView = {
        let randomNumberView = RandomNumberView()
         
         return randomNumberView
+    }()
+    
+    private var historyNumberView: HistoryNumberView = {
+        let historyNumberView = HistoryNumberView()
+        
+        return historyNumberView
+    }()
+    
+    private var buttonsView: ButtonsView = {
+        let buttonsView = ButtonsView()
+        
+        return buttonsView
     }()
     
     
@@ -51,39 +63,21 @@ extension ExtractPageView: ViewAble {
             make.width.equalToSuperview()
             make.height.equalToSuperview()
         }
-    }
-    
-    func configureEvent() {
         
-    }
-}
-
-class RandomNumberView: UIView {
-    
-    lazy var circleRandomNumberView: CircleNumberView = {
-        let randomNumberview = CircleNumberView(number: "1", color: UIColor.getRandom())
-        
-        return randomNumberview
-    }()
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        configureView()
-    }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
-extension RandomNumberView: ViewAble {
-    func configureDraw() {
-        self.addSubview(circleRandomNumberView)
-        
-        circleRandomNumberView.snp.makeConstraints{ make in
+        verticalMainStackView.addStackView(2, addView: historyNumberView)
+        historyNumberView.snp.makeConstraints{ (make) in
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
-            make.width.height.equalTo(self.snp.width).multipliedBy(0.5)
+            make.width.equalToSuperview()
+            make.height.equalToSuperview()
+        }
+        
+        verticalMainStackView.addStackView(3, addView: buttonsView)
+        buttonsView.snp.makeConstraints{ (make) in
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.width.equalToSuperview()
+            make.height.equalToSuperview()
             
         }
     }

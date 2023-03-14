@@ -14,21 +14,20 @@ import SnapKit
 class FlexibleStackView: UIStackView {
     
     var stackUnitViews: [FlexibleStackUnitView] = []
+    var totalRatio = 0.0
     
-    convenience init(ratios: [Float], axis: NSLayoutConstraint.Axis? = nil, spacing: CGFloat? = nil) {
+    convenience init(ratios: [Double], axis: NSLayoutConstraint.Axis? = nil) {
         self.init()
         if let axis = axis {
             self.axis = axis
         }
-        if let spacing = spacing {
-            self.spacing = spacing
-        }
-        self.distribution = .fill
         
         ratios.forEach{ ratio in
             let stackUnitView = FlexibleStackUnitView(ratio: ratio)
             stackUnitViews.append(stackUnitView)
         }
+        self.totalRatio = ratios.reduce(0.0, +)
+        self.distribution = .fill
         
         configureView()
     }
@@ -48,11 +47,11 @@ extension FlexibleStackView: ViewAble {
             stackUnitView.snp.makeConstraints{ make in
                 if(self.axis == .vertical) {
                     make.width.equalToSuperview()
-                    make.height.equalToSuperview().multipliedBy(stackUnitView.ratio)
+                    make.height.equalToSuperview().multipliedBy(stackUnitView.ratio / totalRatio )
                 }
                 else {
                     make.height.equalToSuperview()
-                    make.width.equalToSuperview().multipliedBy(stackUnitView.ratio)
+                    make.width.equalToSuperview().multipliedBy(stackUnitView.ratio /  totalRatio )
                 }
             }
         }
@@ -64,15 +63,12 @@ extension FlexibleStackView: ViewAble {
 }
 
 class FlexibleStackUnitView: UIView {
-    var ratio: Float = 0.0
+    var ratio: Double = 0.0
     
-    convenience init(ratio: Float) {
+    convenience init(ratio: Double) {
         self.init()
         self.ratio = ratio
-        let randomRed:CGFloat = CGFloat(drand48())
-        let randomGreen:CGFloat = CGFloat(drand48())
-        let randomBlue:CGFloat = CGFloat(drand48())
-
-        self.backgroundColor = UIColor(red: randomRed, green: randomGreen, blue: randomBlue, alpha: 1.0)
+       
+        self.backgroundColor = UIColor.getRandom()
     }
 }

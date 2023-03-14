@@ -16,6 +16,10 @@
 		20032F992902340A00567278 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20032F982902340A00567278 /* Extension.swift */; };
 		20032F9C2902637800567278 /* PickNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20032F9B2902637800567278 /* PickNumber.swift */; };
 		20032F9E29029E7000567278 /* DesiginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20032F9D29029E7000567278 /* DesiginService.swift */; };
+		2042749C29C0372F0006A3EF /* HistoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042749B29C0372F0006A3EF /* HistoryCollectionViewCell.swift */; };
+		2042749E29C037550006A3EF /* RandomNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042749D29C037550006A3EF /* RandomNumberView.swift */; };
+		204274A029C037860006A3EF /* HistoryNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2042749F29C037860006A3EF /* HistoryNumberView.swift */; };
+		204274A229C040410006A3EF /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204274A129C040410006A3EF /* ButtonsView.swift */; };
 		205E6A5029BF1269001177B0 /* CircleNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 205E6A4F29BF1269001177B0 /* CircleNumberView.swift */; };
 		206BC88F28DAD2260018AF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BC88E28DAD2260018AF04 /* AppDelegate.swift */; };
 		206BC89128DAD2260018AF04 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206BC89028DAD2260018AF04 /* SceneDelegate.swift */; };
@@ -37,6 +41,10 @@
 		20032F982902340A00567278 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		20032F9B2902637800567278 /* PickNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickNumber.swift; sourceTree = "<group>"; };
 		20032F9D29029E7000567278 /* DesiginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesiginService.swift; sourceTree = "<group>"; };
+		2042749B29C0372F0006A3EF /* HistoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		2042749D29C037550006A3EF /* RandomNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumberView.swift; sourceTree = "<group>"; };
+		2042749F29C037860006A3EF /* HistoryNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryNumberView.swift; sourceTree = "<group>"; };
+		204274A129C040410006A3EF /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
 		205E6A4F29BF1269001177B0 /* CircleNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleNumberView.swift; sourceTree = "<group>"; };
 		206BC88B28DAD2260018AF04 /* ExtractNumber_Rx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExtractNumber_Rx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206BC88E28DAD2260018AF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +186,10 @@
 			children = (
 				207471E129B76868008BE51C /* TempExtractViewController.swift */,
 				207471E329B76B43008BE51C /* ExtractPageView.swift */,
+				2042749B29C0372F0006A3EF /* HistoryCollectionViewCell.swift */,
+				2042749D29C037550006A3EF /* RandomNumberView.swift */,
+				2042749F29C037860006A3EF /* HistoryNumberView.swift */,
+				204274A129C040410006A3EF /* ButtonsView.swift */,
 			);
 			path = ExtractPageView;
 			sourceTree = "<group>";
@@ -277,15 +289,19 @@
 				20715B1929B33F93008EBA57 /* RootTabBarController.swift in Sources */,
 				206BC8A428DAD2540018AF04 /* ExtractViewController.swift in Sources */,
 				207471DF29B58634008BE51C /* ViewProtocol.swift in Sources */,
+				204274A229C040410006A3EF /* ButtonsView.swift in Sources */,
 				207471DC29B5841D008BE51C /* PreViewController.swift in Sources */,
 				205E6A5029BF1269001177B0 /* CircleNumberView.swift in Sources */,
 				20DCB20D29B4C16B0098CA67 /* FlexibleStackView.swift in Sources */,
 				20032F9E29029E7000567278 /* DesiginService.swift in Sources */,
 				20032F8C28FED70800567278 /* ExtractViewModel.swift in Sources */,
+				204274A029C037860006A3EF /* HistoryNumberView.swift in Sources */,
 				20032F992902340A00567278 /* Extension.swift in Sources */,
+				2042749C29C0372F0006A3EF /* HistoryCollectionViewCell.swift in Sources */,
 				206BC89128DAD2260018AF04 /* SceneDelegate.swift in Sources */,
 				20715B3D29B34862008EBA57 /* TabViewController.swift in Sources */,
 				20032F8F28FED75800567278 /* RadomPickService.swift in Sources */,
+				2042749E29C037550006A3EF /* RandomNumberView.swift in Sources */,
 				207471E429B76B43008BE51C /* ExtractPageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
