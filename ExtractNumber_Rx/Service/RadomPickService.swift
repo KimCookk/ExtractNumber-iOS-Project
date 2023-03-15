@@ -1,10 +1,3 @@
-//
-//  RadomPickService.swift
-//  ExtractNumber_Rx
-//
-//  Created by 김태성 on 2022/10/18.
-//
-
 import Foundation
 
 class RandomPickService{
